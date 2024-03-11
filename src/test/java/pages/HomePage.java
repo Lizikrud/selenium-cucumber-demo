@@ -1,16 +1,16 @@
-package Pages;
+package pages;
 
-import Utilities.Driver;
-import org.openqa.selenium.WebDriver;
+
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.Driver;
 
 
 public class HomePage {
 
     public HomePage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+        PageFactory.initElements(Driver.getDriverInstance(),this);
     }
 
 @FindBy(xpath = "//*[contains(text(), 'Welcome')]")
@@ -18,6 +18,7 @@ public class HomePage {
 
 @FindBy(xpath = "//*[contains(text(), 'MAKE A PURCHASE')]")
     public WebElement purchaseButton;
+
 
 
 }

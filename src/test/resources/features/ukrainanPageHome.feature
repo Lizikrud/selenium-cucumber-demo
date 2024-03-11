@@ -1,16 +1,16 @@
 Feature: Home Page and Creating Account
 
-@smoke @run
-  Scenario: Landing on homepage and validate Welcome to Ukrainian Pages
-   Given User should be landing on homepage Ukrainian Pages
-   Then User should see "Welcome to Ukranian Pages"
+  Background: Given User should be landing on homepage Ukrainian Pages
+#@smoke @run
+    Scenario: Landing on homepage and validate Welcome to Ukrainian Pages
+    Then User should see "Welcome to Ukranian Pages"
 
-#@smoke
-  Scenario:  User should be able make a Purchase from Home Page clicking on the buttom
-    Given User should be landing on homepage Ukrainian Pages
-    Then User should see Make a Purchase button
-    Then User should click to Make a Purchase button
-    Then User should be transfer to Catalog Page
+
+ @smoke
+    Scenario: Validate Tittle
+    And Validate the Tittle
+
+
 
 #  @smoke
   Scenario: Create account on Login Page

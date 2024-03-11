@@ -1,0 +1,5 @@
+Token for Git - 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
+
+Git URL - https://github.com/Lizikrud/selenium-cucumber-demo.git
+
+https://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@github.com/Lizikrud/selenium-cucumber-demo.git
