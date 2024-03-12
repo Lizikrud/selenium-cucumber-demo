@@ -23,7 +23,6 @@ public class MainHomepageStep {
 
     @Then("User should see {string}")
     public void user_should_see(String expectedBanner) {
-
       String actual = homePage.banner.getText();
       Assert.assertEquals("Banner doesn't correct", expectedBanner, actual);
 
