@@ -5,7 +5,7 @@ Feature: User login process
     Given user navigates to Ukrainian Pages
 
 
-  @loginValid @smoke
+  @smoke
   Scenario: Login with valid credentials
     When user logs in with username "yulliaroberts123@gmail.com" and password "yr123456789"
     When user clicks login button
