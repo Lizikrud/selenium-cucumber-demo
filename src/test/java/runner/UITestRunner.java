@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
         features="src/test/resources/features",
         glue={"stepDefinitions"},
         dryRun = false,
-        tags="@smoke",
+        tags="@regression",
         plugin = {"pretty","html:target/cucumber","html:target/cucumber-html-report",
                 "json:target/cucumber.json"},
         monochrome = false
